@@ -1,0 +1,621 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #ffffff;    /*设置大背景，颜色为3000px*/
+	height: 3000px;
+}
+/*header部分开始*/
+.header{                          
+	background-color: #9c221f;
+	height: 30px;
+}
+.inner{                       /*header部分版心*/
+	width:1000px;
+	height: 30px;
+	margin: 0 auto;
+}
+.icons{                         /*两个小图标 微信和微博*/
+	float: left;
+	height: 30px;
+}
+.wechat{                           /*微信图标 设置与微博图标的间隔*/
+	margin-left: 10px;
+}
+a.tip{                             /*附加文本开始*/
+	position: relative;
+	z-index: 24;
+}
+a.tip span{             
+	display: none;
+}
+a.tip:hover span{
+	font-weight: 400;
+	display: block;
+	position: absolute;
+	top:20px;
+	left: 25px;
+	width: 150px;
+	padding: 3px;
+	border: 1px solid #000;
+	background-color: #ddd;
+	color: #000;
+}                                 /*附加文本结束*/
+.contact{                             /*电话邮箱部分右浮动*/
+	float:right;
+	height: 30px;
+}
+
+#email{                               /*文本垂直居中*/
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+
+}
+#phone{                               /*文本垂直居中*/
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;	
+	font-size: 12px;
+	font-weight: 700;
+}
+/*header部分结束*/
+
+
+/*banner部分开始*/
+.beijing{                               /*banner部分背景*/
+	background-color: #f7f8fa;
+	height: 640px;
+	position:relative;
+}
+.banner{                               /*banner部分版心*/
+	background-color:#f7f8fa;
+	width: 1000px;
+	height: 115px; 
+	margin: 0 auto;
+	position: relative;
+}
+.logo{                               /*logo部分*/
+	margin-top: 35px;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 68px;
+}
+.nav{                                 /*导航栏部分开始*/
+	margin-top: 35px;
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.nav li{
+	float:left;
+	list-style: none;
+	text-decoration:none;
+	line-height: 68px;
+	margin:0 5px;
+}
+.nav li a{
+	text-decoration: none;
+	color:#838384;
+}
+.nav li a:hover{
+	color:#ae4d4b;
+	border-bottom: 2px solid #ae4d4b;  /*导航栏部分结束*/
+}
+.picture1{                               /*大图部分*/
+	height: 525px;
+	background:url(../img/bg-picture.jpg) no-repeat top center;
+}
+.text1{                               /*正乾，您身边的金融*/                 
+	height: 64px;
+	width: 547px;
+	background: rgba(255,255,255,0.3);  /*背景透明度*/
+	margin:160px 0 0 200px;
+	float:left;
+	line-height: 64px;
+	font-size: 38px;
+	font-weight: 500;
+	float:left;
+	color: #666;
+	padding-left: 10px;
+	position: relative;
+}
+.text2{                               /*专家 渐变色没调*/
+	height: 76px;
+	width: 180px;
+	float:right;
+	font-size: 80px;
+	color: #fcd9bb;
+	margin-left: -30px;
+	background:linear-gradient(to top, #a12b27 0%,#fcdabe 50%,#fcdabe 50%,#a12b27 100%);
+	-webkit-background-clip: text;
+	color: transparent;   
+	position: absolute;
+	bottom: 0px;
+	right: 5px;
+	/* text-shadow: 1px -1px 1px #666; */
+}      
+.text3{                               /*  方便/快捷/可靠  */
+	width: 240px;
+	height: 80px;
+	float:left;
+	margin-top: 240px;
+	margin-left: -550px;
+	color: #9e9f9f;
+	font-weight: 600;
+	line-height: 25px;
+}
+.help_link{                               /*申请帮助 链接*/
+	font-weight: 700;
+	font-size: 16px;
+	text-decoration: none;
+	color:#fff;
+}
+.help_button{                               /*申请帮助  按钮*/
+	width: 130px;
+	height: 50px;
+	border-radius: 5%;
+	line-height: 50px;
+	text-align: center;
+	margin-top:350px;
+	margin-left: -550px;
+	float: left;
+	background: #c0312e;
+}
+.advantage-body>a>div:hover{
+	background-color: #9c221f;
+}
+.advantage-body>a>div>div:hover p{
+	color: #feffff;
+}
+.advantage-body>a>div>div:hover h4{
+	color: #feffff;
+}
+
+                               /*固定导航栏开始*/
+.absolute01{
+	position: fixed;
+	left: 1370px;
+	top:250px;
+}
+.absolute02{
+	position: fixed;
+	top:302px;
+	left: 1370px;
+}
+.absolute03{
+	position: fixed;
+	top:354px;
+	left: 1370px;
+}
+.absolute04{
+	position: fixed;
+	top:406px;
+	left: 1370px;
+}
+                               /*固定导航栏结束*/
+/*banner部分结束*/
+
+
+/*六大优势部分开始*/
+.beijing01{                               /*设置大背景*/
+	height: 550px;
+	background-color: #f5f4f9;
+	border-top:2px solid #9c221f;
+}
+.advantage{                               /*设置版心*/
+	height: 445px;
+	width: 1000px;
+	background-color: #f5f4f9;
+	margin:0 auto;
+}
+.advantage-padding{           /*顶部空白部分*/
+	height: 105px;
+	background-color: #f5f4f9;
+	border-bottom: 1px solid #dedede;
+}
+.advantage-head{                           优势部分头部
+	border-top: 2px solid #dedede;
+}
+.advantage-head h3{                         /*优势部分标题*/
+	width:243px;
+	height: 75px;
+	margin:-45px auto 0;	
+}
+.advantage-body{                       /*优势部分主体*/
+	margin-top: 60px;
+}
+.print01{                       /*第一块*/
+	width: 220px;
+	height: 140px;
+	float:left;
+	padding-left: 100px;
+	position: relative;
+	background-color: #;
+	background:#fff url(../img/logo1.png) no-repeat;
+	background-position:30px 50px ;
+}
+.print02{                       /*第二块 */
+	width: 320px;
+	height: 140px;
+	background-color: #fff;	
+	float:left;
+	margin:0 20px 0;
+	background:#fff url(../img/logo2.png) no-repeat;
+	background-position:30px 50px ;
+}
+.print03{                       /*第三块*/
+	width: 320px;
+	height: 140px;
+	background-color: #fff;	
+	float:left;
+	background:#fff url(../img/logo3.png) no-repeat;
+	background-position:30px 50px ;
+}
+.print04{                       /*第四块*/
+	width: 320px;
+	height: 140px;
+	background-color: #fff;	
+	float:left;
+	margin-top: 20px;
+	background:#fff url(../img/logo4.png) no-repeat;
+	background-position:30px 50px ;
+}
+.print05{                       /*第五块*/
+	width: 320px;
+	height: 140px;
+	background-color: #fff;	
+	float:left;
+	margin:20px 20px 0;
+	background:#fff url(../img/logo5.png) no-repeat;
+	background-position:30px 50px ;
+}
+.print06{                       /*第六块*/
+	width: 320px;
+	height: 140px;
+	background-color: #fff;	
+	float:left;
+	margin-top: 20px;
+	background:#fff url(../img/logo6.png) no-repeat;
+	background-position:30px 50px ;
+}
+
+
+.print-right{                       
+	width: 220px;
+	height: 140px;
+	float:right;
+}
+.advantage-body  h4{              /*文本的标题*/
+	margin-top: 25px;
+	color:#666;
+	font-size: 18px;
+}
+
+.loans{                       /*LOANS MORE EASILY*/
+	font-size: 12px;
+	color:#bbb;
+}
+.text4{                       /*文本*/
+	margin-top: 5px;
+	font-size: 12px;
+	color:#bbb;
+}
+
+                       /**/
+/*服务部分开始*/
+
+.survice{                       /*服务部分版心*/
+	width:1000px;
+	height: 520px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.survice-head{                       /*服务部份头部*/
+	border-top: 2px solid #dedede;
+	margin-top:105px;
+}
+.survice-head h3{                       /*服务部份标题*/
+	width:243px;
+	height: 75px;
+	margin:-45px auto 0;	
+}
+
+.survice-body{                        /*服务部份主体*/
+	margin-top:55px;
+	width:1000px;
+	height: 380px;	
+}
+.circle01,.circle02,.circle03,.circle04,.circle05{
+	width:165px;
+	height: 260px;                       /*给每个块设置宽高和浮动*/
+	float:left;
+}
+.circle01{                            /**/
+    margin-left: 20px;
+}
+.circle02{
+	margin:0 35px 0;
+}
+.circle04{
+	margin:0 35px 0;
+}
+.circle{                            /*把块变成圆*/
+	width: 160px;
+	height: 160px;
+	border:6px solid #9c221f;
+	border-radius: 50%;
+}
+.circile_link{                       /*整个圆圈是个链接*/
+	text-decoration: none;
+	color:#9c221f;
+	font-weight: 700;
+	font-size: 25px;
+	text-align: center;;
+}
+a.circile_link:hover{                       /*鼠标放到圆圈时 文字颜色的变化*/
+	color:#fff;
+}
+.circle:hover{                       /*鼠标放到圆圈时，圆圈的背景颜色发生变化*/
+	background: #9c221f;
+}
+.text5{                       /*圆圈中间的文本*/
+    display: inline-block;
+    margin-top:50px;
+	text-align: center;
+}
+
+.title{                       /*圆圈下面文本的开头*/
+	display: block;
+	margin:27px 0 10px;
+	text-align: center;
+	color: #333;
+	font-weight: 700;
+}
+.text6{                       /*圆圈下面的文本*/
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	font-weight: 700;
+}
+/*服务部分结束*/
+
+/*关于企业部分开始*/
+.beijing02{                       /*设置一个背景*/
+	height: 575px;
+	background-color: #f5f4f9;
+}
+.about{                            /*关于企业部分的版心*/
+	width: 1000px;
+	height: 575px;
+	margin: 0 auto;
+}
+.about-padding{
+	height: 105px;
+	background-color: #f5f4f9;
+	border-bottom:1px solid #dedede;
+}
+.about-head{                       /*头部*/
+	border-top:1px solid #dedede;
+/*	padding:105px;*/
+}
+.about-head h3{                       /*头部的标题*/
+	width:243px;
+	height: 70px;
+	margin:-45px auto 50px;	
+}
+.about-head .title01{                /*标题，可靠的本地企业让您无后顾之忧*/
+	text-align: center;
+	color: #9c221f;
+	font-size:20px ;
+	font-weight: 700;
+	margin-bottom: 35px;
+}
+.text7{                             /*大段文字*/
+	color:#a5a5a6;
+	font-size: 13px;
+}
+.picture2{                       /*图片*/
+	margin-top:20px;
+	margin-left:50px;
+}
+.picture2:hover{
+transform: scale(1.2);        /*鼠标悬停时，图片 放大1.2倍 */
+}
+/*关于企业部分结束*/
+
+/*提问部分开始*/
+.question{                       /*提问部分版心*/
+	width:1000px;
+	height: 740px;
+	margin:0 auto;
+}
+.question-head{                       /*头部*/
+	border-top: 2px solid #dedede;
+	margin-top:105px;
+}
+.question-head h3{                    /*头部标题*/
+	width:243px;
+	height: 70px;
+	margin:-45px auto 50px;	
+}
+.question-body{                       /*主体部分*/
+	height: 460px;
+	width: 1000px;;
+}
+.body-left{                       /*左边的提问框开始*/
+	height: 390px;
+	width:395px;
+	float:left;
+	margin-right: 90px;
+	margin-left: 60px;
+}
+.body-left ul {                 
+	margin-top:30px;
+}
+.body-left ul li{
+    margin-bottom: 10px;
+}
+.body-left ul a{
+	text-decoration: none;
+	color:#666;
+}                                  /*左边的提问框结束*/
+
+.body-right{                       /*右边的提问框开始*/
+	height: 385px;
+	width:395px;
+	float:left;
+}
+.body-right ul {
+	margin-top:24px;
+}
+.body-right ul li{
+    margin-bottom: 10px;
+}
+.body-right ul a{
+	text-decoration: none;
+	color:#666;
+}                                 /*右边的提问框结束*/
+
+.question-body a:hover{                 /*鼠标悬停时，字体颜色变化，出现下划线*/
+	color: #ae4b48;
+	text-decoration: underline;
+}
+.more_link{                       /*为更多按钮设置一个链接*/                         /**/
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #fff;
+}
+.more_div{                       /*更多按钮*/
+	width: 60px;
+	height: 60px;
+	border:1px solid #9c221f;
+	border-radius: 50px;
+	line-height: 60px;
+	text-align: center;
+	background: #9c221f;
+	margin-left: 460px;
+}
+/*提问部分结束*/
+
+/*底部开始*/
+.footer{                         /*footer部分背景*/
+	height: 325px;
+	background-color: #9c221f;
+}
+.footer-body{                         /*footer部分版心*/
+	width:1000px;
+	height: 325px;
+	margin: 0 auto;
+}
+.footer-up{                         /*footer上部分*/
+	width: 1000px;
+	height: 215px;
+	border-bottom:1px dashed #841b18;
+}
+.footer-left{                         /*footer上部分的左部分*/
+	width: 110px;
+	height: 175px;
+	float:left;
+	margin-left: 15px;
+	margin-top: 40px;
+}
+.text8{                         /*文字---关注正乾*/
+	font-size: 12px;
+	float: right;
+	margin-right: 15px;
+	margin-top:5px;
+	color: #fff;
+}
+.footer-middle{                         /*footer上部分的中部，放留言板等输入框*/
+	width: 510px;
+	height: 175px;
+	float:left;
+	margin:0 40px 0;
+	margin-top: 40px;
+}
+.person-information{                         /*个人资料输入框*/
+	width: 168px;
+	height: 108px;
+	margin-top:2px;
+	float:left;
+}
+.text9{                               /*文字---在线留言*/
+	font-size: 12px;
+	float: right;
+	margin-right:430px;
+	margin-top:5px;
+	color: #fff;
+}
+.person-information input{                    /*个人信息输入按钮*/
+	border:1px solid #fff;
+	width:166px;
+    height:33px;
+    background-color: #ba6563;
+}
+.telephone{                         /*文字--电话*/
+	margin-top:2px;
+	margin-bottom:2px;
+}
+
+.messageboard{                         /*留言板*/
+	width: 280px;
+	height: 108px;
+	float: left;
+	margin-top: 3px;
+	margin-left: 3px;
+}
+textarea{
+	width: 300px;
+	height: 108px;
+	background-color:#ba6563 ;
+}
+.button-sumit{                         /*提交按钮*/
+	margin-top:4px;
+	float:right;
+}
+
+
+.footer-right{                           /*footer上部分的右部分*/
+	width: 275px;
+	height: 175px;
+	margin-top: 40px;
+	float:left;
+}
+.touchUs{                    /*   联系我们*/
+	font-size: 12px;
+    float:right;
+	color: #fff;
+	margin-right: 200px;	
+	margin-top:5px;
+}
+.company-information{
+	color:#fff;
+	font-size: 13px;
+	margin:5px 0;
+}
+.footer-down{                         /*footer下部分*/
+	float:left;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.copyright{                            /*版权所有*/
+	color: #fff;
+	font-size: 13px;
+	display: inline-block;
+	margin-left: 300px;
+}
+.icons2{                 /*  小图标*/
+	width: 55px;
+	height: 30px;
+	margin-left: 480px;
+}

@@ -1,0 +1,112 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%><%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				/* position: relative; */
+			}
+			.big{
+				width: 500px;
+				height: 300px;
+				background: linear-gradient(#957780,#324713);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				border-radius: 10px;
+			}
+			.biaodan{
+				background-color: rgba(245,244,249,0.1);
+				width: 90%;
+				height: 200px;
+				margin: 12px auto;
+				border-radius: 10px;
+				
+			}
+			.wenzi{
+				color: #ffffff;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				font-size: 35px;
+			}
+			.tijian{
+				background-color: ;
+			}
+			form{
+				font-size: 20px;
+			}
+			/* form div{
+				display: flex;
+				align-items: center;
+				box-sizing: border-box;
+				position: relative;
+				padding-left:80px;
+				padding-top: 20px;
+				text-align: center;
+				
+			} */
+			form>div{
+				padding-left: 50px;
+			}
+			form div>p{
+				margin-left: 114px;
+				font-size: 30px;
+			}
+			.lastpage{
+				margin: 0,auto;
+				display: inline-block;
+				margin-top: 23px;
+				margin-left: 107px;
+				width: 100px;
+			}
+			.yanzheng{
+				margin-left: 100px;
+				width: 60px;
+			}
+			.submit{
+				margin-left:137px ;
+			}
+			
+			
+		</style>
+	</head>
+	<%
+	pageContext.setAttribute("error", request.getAttribute("error"));
+	pageContext.setAttribute("nul", null);
+	%>
+	<c:if test="${error==nul }">
+	<%pageContext.setAttribute("error",""); %>
+	</c:if>
+	<body>
+	
+		<div class="big">
+		<div class="wenzi"><p>WELCOME TO CAT</p ></div>
+		<form action="login1" method="post" class="biaodan">
+			<div>
+				<p>Hello</p>
+				<input type="button" value="返回上一页" class="lastpage">
+				<br/>
+				学号：<input type="text" value="">
+				<br/>
+				密码：<input type="text" value="">
+				<br/>
+				<input type="text" placeholder="请输入验证码" class="yanzheng">
+				<br/>
+				<input type="submit" class="submit">
+
+			</div>
+		</form>
+	
+		</div>
+
+	</body>
+</html>
